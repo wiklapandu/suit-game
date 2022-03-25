@@ -1,0 +1,89 @@
+/* ? Import Font from Font Google */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+
+:root {
+  --ligth-blue: #b2d8f7;
+  --dark-blue: #5475e8;
+  --gradient-1: #67aeee;
+  --background: #faf9fe;
+  --gradient-2: var(--dark-blue);
+}
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.timer {
+  text-align: center;
+}
+
+.timer h2 {
+  font-size: 3rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  margin: 1rem auto;
+  font-size: 2rem;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  border: none;
+  background: linear-gradient(180deg, var(--gradient-1), var(--gradient-2));
+  transition: all 0.3s ease-out;
+}
+.btn-rec {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--gradient-1), var(--gradient-2));
+  transition: all 0.3s ease-out;
+}
+.btn:hover,
+.btn-rec:hover {
+  transform: scale(90%);
+}
+
+.answer {
+  width: 30rem;
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  left: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+.answer button {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.suit {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 6rem;
+}
+h1 {
+  margin-top: 2rem;
+}
+h1,
+h3 {
+  text-align: center;
+}
+.alert {
+  font-size: 3rem;
+}
+.container {
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+}
