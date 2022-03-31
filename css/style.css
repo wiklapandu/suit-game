@@ -17,6 +17,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 .timer {
   text-align: center;
 }
